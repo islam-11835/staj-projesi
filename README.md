@@ -19,4 +19,4 @@ Bu proje, Laravel framework'ü kullanılarak geliştirilmiş bir e-ticaret siste
 İslam Bilgisayar Mühendisliği Stajyeri
 
 ## 📎 Proje Bağlantısı:
-[GitHub'da Görüntüle](https://github.com/elhallumislam-ui/staj-projesi)
+[GitHub'da Görüntüle](https://github.com/islam-11835/staj-projesi)
