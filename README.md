@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Staj Projesi – Laravel E-Ticaret Modülü
 
 Bu proje, Laravel framework'ü kullanılarak geliştirilmiş bir e-ticaret sisteminin sipariş ve ürün yönetimi modülünü içermektedir. Yazılım geliştirme stajım süresince edindiğim bilgiler doğrultusunda hazırlanmıştır.
@@ -20,3 +21,7 @@ Bu proje, Laravel framework'ü kullanılarak geliştirilmiş bir e-ticaret siste
 
 ## 📎 Proje Bağlantısı:
 [GitHub'da Görüntüle](https://github.com/islam-11835/staj-projesi)
+=======
+# staj-projesi
+Laravel tabanlı e-ticaret uygulaması - staj projesi
+>>>>>>> 3f42798c9e24598cbab047672d3157cf35624611
