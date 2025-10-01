@@ -12,18 +12,28 @@ class OrderController extends Controller
     {
         return Order::with('products')->get();
     }
+public function store(Request $request)
+{
+    $request->validate([
+        'user_id' => 'required|exists:users,id',
+        'status' => 'required|string',
+        'currency' => 'required|in:TRY,USD,EUR,GBP',
+        'amount' => 'required|numeric',
+        'product_id' => 'required|array',
+    ]);
 
-    public function store(Request $request)
-    {
-        $order = Order::create([
-            'user_id' => $request->user_id,
-            'status' => $request->status,
-        ]);
+    $order = Order::create([
+        'user_id' => $request->user_id,
+        'status' => $request->status,
+        'currency' => $request->currency,
+        'amount' => $request->amount,
+    ]);
 
-        $order->products()->attach($request->product_id);
+    $order->products()->attach($request->product_id);
 
-        return response()->json($order, 201);
-    }
+    return response()->json($order->load('products'), 201);
+}
+
 
     public function update(Request $request, $id)
     {
